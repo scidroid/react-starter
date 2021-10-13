@@ -1,7 +1,7 @@
 import { useUser } from "@auth0/nextjs-auth0";
 import Link from "next/link";
 
-const Title = () => {
+const TitleHeader = () => {
   const { user } = useUser();
   if (user) {
     return (
@@ -65,7 +65,7 @@ export const Hero = () => {
       <div className="max-w-xl mx-auto lg:max-w-screen-xl">
         <div className="mb-16 lg:max-w-lg lg:mb-0">
           <div className="max-w-xl mb-6">
-            <Title />
+            <TitleHeader />
             <p className="text-base text-gray-700 md:text-lg">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
